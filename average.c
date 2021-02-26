@@ -1,0 +1,25 @@
+//to print the average of n given numbers
+#include<stdio.h>
+
+void main()
+{
+  int i,n,Sum=0,numbers;
+  float Average;
+
+  printf("Please Enter How many Numbers you want?\n");
+  scanf("%d",&n);
+
+  printf("\nPlease Enter the elements one by one\n");
+  for(i=0;i<n;i++)
+   {
+     scanf("%d",&numbers);
+     Sum = Sum +numbers;
+   }
+
+  Average = Sum/n;
+
+  printf("\nSum of the %d Numbers = %d",n, Sum);
+  printf("\nAverage of the %d Numbers = %.2f",n, Average);
+
+  return 0;
+}
