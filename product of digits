@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main()
+{
+  	int n, r , p;
+ 
+  	printf("Please Enter any Number that you wish  : ");
+  	scanf("%d", &n);
+  	 	
+  	for(p = 1; n > 0; n = n / 10)
+  	{
+  		r = n % 10;
+	    p = p * r;
+	}
+  
+	printf(" \n The Product of Digits of a Given Number =  %d", p);
+ 
+  	return 0;
+}
